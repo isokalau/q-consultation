@@ -125,14 +125,6 @@ export default createUseComponent((props: AppointmentsProps) => {
     }
   }
 
-  const onRemoveClick = (item: QBAppointment) => {
-    if (isOpenMenu) toggleMenu()
-    actions.toggleShowModal({
-      modal: 'AppointmentActionModal',
-      appointmentId: item._id,
-    })
-  }
-
   const handleGetAppointments = (skip = 0) => {
     if (!isOffline) {
       actions.getAppointments({
@@ -208,7 +200,6 @@ export default createUseComponent((props: AppointmentsProps) => {
     actions,
     data: { isOffline, search, appointmentsList },
     handlers: {
-      onRemoveClick,
       handleSelect,
       handleChangeSearch,
     },

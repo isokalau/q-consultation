@@ -12,7 +12,6 @@ import Modal from '../../components/Modal'
 import Header from '../../modules/Header'
 import VideoCall from '../../modules/VideoCall'
 import UploadIndicator from '../../modules/UploadIndicator'
-import AppointmentActionModal from '../../modules/modals/AppointmentActionModal'
 import AssignModal from '../../modules/modals/AssignModal'
 import ConclusionModal from '../../modules/modals/ConclusionModal'
 import FinishModal from '../../modules/modals/FinishModal'
@@ -21,6 +20,7 @@ import Notifications from '../../modules/Notification'
 import SkipModal from '../../modules/modals/SkipModal'
 import LogoutModal from '../../modules/modals/LogoutModal'
 import ShareLinkModal from '../../modules/modals/ShareLinkModal'
+import CreateAppointmentModal from '../../modules/modals/CreateAppointmentModal'
 
 import ProfileScreen from '../ProfileScreen'
 import AppointmentsScreen from '../AppointmentsScreen'
@@ -78,7 +78,6 @@ export default function MainScreen() {
       <Modal>
         <LogoutModal />
         <ShareLinkModal />
-        <AppointmentActionModal />
         <AssignModal />
         <ConclusionModal />
         <EditNotesModal />
@@ -87,6 +86,7 @@ export default function MainScreen() {
         <SkipModal />
         <SaveRecordModal />
         <AppointmentDetailsModal />
+        <CreateAppointmentModal />
       </Modal>
     </main>
   )

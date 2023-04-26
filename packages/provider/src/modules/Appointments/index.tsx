@@ -52,7 +52,6 @@ export default function Appointments(props: AppointmentsProps) {
         key={item._id}
         onCall={isCall}
         onItemClick={handleSelect}
-        onRemoveClick={onRemoveClick}
         selected={selected}
         users={users}
         loading={usersLoading}
